@@ -1,12 +1,14 @@
 package com.wez.timertask;
 
 
+import org.springframework.context.annotation.Lazy;
 import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.stereotype.Component;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
+@Lazy(value=false)
 @Component
 public class TimerTaskTest {
 
